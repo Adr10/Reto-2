@@ -1,12 +1,21 @@
-package com.example.Reto2.modelo;
+package com.example.Reto2.modelo.Trabajador;
 
 import java.util.Date;
+
+import com.example.Reto2.modelo.User.User;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 
 public class Trabajador extends User{
 	
 	
+	@Temporal(TemporalType.DATE)
 	private Date fec_alta;
+	@Temporal(TemporalType.DATE)
 	private Date fec_baja;
+	@Column(length = 60)
 	private Long sueldo;
 	
 	

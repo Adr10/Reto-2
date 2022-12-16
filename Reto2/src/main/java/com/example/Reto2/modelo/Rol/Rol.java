@@ -1,7 +1,8 @@
-package com.example.Reto2.modelo;
+package com.example.Reto2.modelo.Rol;
 
 import java.util.List;
 
+import com.example.Reto2.modelo.User.User;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import jakarta.persistence.CascadeType;
